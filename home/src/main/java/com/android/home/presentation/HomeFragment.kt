@@ -1,4 +1,4 @@
-package com.android.home.presentation.home
+package com.android.home.presentation
 
 import android.os.Bundle
 import android.view.View

@@ -47,4 +47,5 @@ dependencies {
     testImplementation(Libraries.JUNIT)
     androidTestImplementation(Libraries.JUNIT_EXT)
     testImplementation(Libraries.MOCKK)
+    testImplementation(Libraries.COROUTINE_TESTING)
 }

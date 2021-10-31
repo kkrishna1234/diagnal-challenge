@@ -37,6 +37,8 @@ object Libraries {
     const val MOCKK = "io.mockk:mockk:${Versions.MOCKK_VERSION}"
     const val ARCH_CORE_TESTING =
         "android.arch.core:core-testing:${Versions.ARCH_CORE_TESTING_VERSION}"
+    const val COROUTINE_TESTING =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.COROUTINE_VERSION}"
 
     // UI testing
     const val ESPRESSO_CORE =
@@ -70,6 +72,7 @@ object BuildPlugins {
     const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.buildToolsVersion}"
     const val kotlinGradlePlugin =
         "org.jetbrains.kotlin:kotlin-gradle-plugin:${Kotlin.standardLibrary}"
+    const val kotlinTestPlugin = "rg.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.9"
     const val androidApplication = "com.android.application"
     const val kotlinAndroid = "kotlin-android"
     const val androidLibrary = "com.android.library"

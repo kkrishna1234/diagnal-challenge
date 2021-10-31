@@ -66,6 +66,7 @@ dependencies {
     androidTestImplementation(Libraries.JUNIT_EXT)
     testImplementation(Libraries.MOCKK)
     testImplementation(Libraries.ARCH_CORE_TESTING)
+    testImplementation(Libraries.COROUTINE_TESTING)
 
     // UI testing
     androidTestImplementation(Libraries.ESPRESSO_CORE)

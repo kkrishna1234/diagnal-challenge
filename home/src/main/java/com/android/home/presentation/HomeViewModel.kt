@@ -1,4 +1,4 @@
-package com.android.home.presentation.home
+package com.android.home.presentation
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

@@ -1,5 +1,6 @@
 package com.android.diagnalmovies
 
+import kotlinx.coroutines.test.TestCoroutineDispatcher
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -12,6 +13,7 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
+        TestCoroutineDispatcher
         assertEquals(4, 2 + 2)
     }
 }
