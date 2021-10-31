@@ -33,15 +33,20 @@ class SearchViewModel(
     fun search(query: String) {
 
         viewModelScope.launch {
+            _progressBarLiveData.value = true
             when (val result = searchMoviesUseCase.searchMovies(query)) {
                 is Result.Success -> {
+                    _progressBarLiveData.value = false
                     if (result.data.isNullOrEmpty()) {
                         handleError(ErrorType.ContentUnavailable)
                     } else {
                         _movieListLiveData.value = Pair(query, result.data)
                     }
                 }
-                is Result.Error -> handleError(result.error)
+                is Result.Error -> {
+                    _progressBarLiveData.value = false
+                    handleError(result.error)
+                }
             }
         }
     }
